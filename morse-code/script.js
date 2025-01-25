@@ -55,6 +55,6 @@ function copyToClipboard(elementId) {
 }
 
 // Redirect to macrox.html
-document.getElementById('go-to-macrox').addEventListener('click', () => {
+document.getElementById('go-to-encrypt').addEventListener('click', () => {
     window.location.href = '/encrypt-decrypt/index.html';
 });
