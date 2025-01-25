@@ -81,6 +81,22 @@
             font-size: 1.2em;
         }
 
+        .redirect-button {
+            margin-left: 10px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .redirect-button:hover {
+            background-color: #0056b3;
+        }
+
         /* Media queries for mobile responsiveness */
         @media (max-width: 768px) {
             body {
@@ -111,6 +127,7 @@
 <body>
     <h1>Text Encryption and Decryption</h1>
 
+    <button class="redirect-button" id="go-to-macrox">Go to Macros</button>
     <div class="tabs">
         <div class="tab active" id="tab-encrypt">Encrypt</div>
         <div class="tab" id="tab-decrypt">Decrypt</div>
@@ -167,6 +184,11 @@
             encryptTab.classList.remove('active');
             encryptSection.style.display = 'none';
             decryptSection.style.display = 'block';
+        });
+
+        // Redirect to macrox.html
+        document.getElementById('go-to-macrox').addEventListener('click', () => {
+            window.location.href = 'morse-code/index.html';
         });
 
         // Copy text function
