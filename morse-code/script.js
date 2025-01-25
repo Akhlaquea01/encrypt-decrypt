@@ -56,5 +56,5 @@ function copyToClipboard(elementId) {
 
 // Redirect to macrox.html
 document.getElementById('go-to-macrox').addEventListener('click', () => {
-    window.location.href = '/index.html';
+    window.location.href = '/encrypt-decrypt/index.html';
 });
